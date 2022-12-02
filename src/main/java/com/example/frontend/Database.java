@@ -22,7 +22,7 @@ public class Database {
 
                 Statement st = connection.createStatement();
 
-                String query = "SELECT * FROM ORDER_DETAILS";
+                String query = "SELECT * FROM ORDER_DETAILS ORDER BY ORDERID";
 
                 ResultSet resultSet = st.executeQuery(query);
 
